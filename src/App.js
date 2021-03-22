@@ -1,5 +1,6 @@
 import NavBar from "./navBar/NavBar";
 import StartPage from "./startPage/StartPage";
+import Todo from "./Todos/Todo";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <StartPage>
         <NavBar />
       </StartPage>
+      {/* <Todo /> */}
     </>
   );
 }

@@ -56,6 +56,8 @@ section img {
   color: #040d15;
   font-size: 10em;
   z-index: 1;
+  box-shadow: 0 5px 10px rgb(0, 0, 0), 5px 10px 15px rgb(0, 0, 0);
+  border-radius: 15px;
 }
 
 .enterBtn {
@@ -79,7 +81,7 @@ section img {
 .container {
   /* width: 1005vw; */
   margin: 5rem auto;
-  max-height: 350px;
+  max-height: 300px;
   max-width: 550px;
   /* border-bottom-style: groove; */
   background: #140c572c;
@@ -172,7 +174,7 @@ section img {
   border-radius: 0.3rem;
   border-color: transparent;
   cursor: pointer;
-  transition: all 0.3s linear;
+  transition: all 0.3s ease-in-out;
   font-size: 1.5rem;
   width: 8rem;
   text-transform: lowercase;
@@ -182,6 +184,7 @@ section img {
 
 .randomBtn:hover {
   background-color: #755bea;
+  border: 2px solid black;
 }
 
 footer {
