@@ -55,8 +55,7 @@ h4 {
   letter-spacing: var(--spacing);
   text-transform: capitalize;
   line-height: 1.25;
-  margin-bottom: 0.75rem;
-  color: radial-gradient(rgba(112, 18, 156, 0.473), rgba(26, 1, 37, 0.473));
+  margin: 0.75rem 0;
 }
 h1 {
   font-size: 3rem;
@@ -66,6 +65,10 @@ h2 {
 }
 h3 {
   font-size: 1.25rem;
+
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.473);
+  border-radius: 10px;
+  border: transparent solid;
 }
 h4 {
   font-size: 0.875rem;

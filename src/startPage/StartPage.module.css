@@ -91,6 +91,7 @@ section img {
   flex-direction: column;
   margin-bottom: 180px;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .container h3 {
@@ -98,15 +99,27 @@ section img {
   text-align: center;
   margin-top: -3.5rem;
   color: #a886c9;
-  height: 10px;
+}
+
+.container img {
+  position: absolute;
+  width: 8rem;
+  height: 5.5rem;
+  resize: both;
+  border-radius: 20%;
+  /* opacity: 14; */
 }
 
 .underline {
   height: 0.2rem;
-  width: 7rem;
+  width: 8rem;
   background: #a886c9;
   margin-left: auto;
   margin-right: auto;
+
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.473);
+  border-radius: 10px;
+  border: transparent solid;
   /* margin-bottom: 3rem; */
 }
 
@@ -126,7 +139,7 @@ section img {
 .next {
   position: absolute;
   margin: 0 600px;
-  top: 50%;
+  top: 52%;
   transform: translateY(-50%);
   background: hsl(210, 22%, 49%);
   color: #fff;
@@ -135,6 +148,9 @@ section img {
   border-color: transparent;
   font-size: 1rem;
   border-radius: 0.5rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.473);
+  border-radius: 10px;
+  border: transparent solid;
   cursor: pointer;
   transition: all 0.3s linear;
 }
@@ -152,7 +168,7 @@ section img {
 .randomBtn {
   transform: translateY(200%);
   background: rgba(112, 18, 156, 0.473);
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   border-radius: 0.3rem;
   border-color: transparent;
   cursor: pointer;
@@ -160,6 +176,7 @@ section img {
   font-size: 1.5rem;
   width: 8rem;
   text-transform: lowercase;
+  box-shadow: 0 5px 10px rgb(0, 0, 0), 5px 10px 15px rgb(0, 0, 0);
   /* top: 60%; */
 }
 

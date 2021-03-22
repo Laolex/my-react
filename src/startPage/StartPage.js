@@ -13,7 +13,8 @@ function StartPage() {
   const [offsetY, setOffsetY] = useState(0);
   const [date, setDate] = useState("");
   const [index, setIndex] = useState(0);
-  const { id, text } = infos[index];
+
+  const { id, text, img } = infos[index];
   const handleScroll = () => setOffsetY(window.scrollY);
 
   const getDate = () => {
@@ -32,14 +33,14 @@ function StartPage() {
     return number;
   };
 
-  const prevPerson = (id) => {
+  const prevPerson = () => {
     setIndex((index) => {
       let newIndex = index + 1;
       return checkNumber(newIndex);
     });
   };
 
-  const nextPerson = (id) => {
+  const nextPerson = () => {
     setIndex((index) => {
       let newIndex = index - 1;
       return checkNumber(newIndex);
@@ -84,9 +85,10 @@ function StartPage() {
           </header>
           <div className={styles.center}>
             <p>{text}</p>
+            {/* {img} */}
           </div>
           <footer>
-            <hr />
+            <br />
             <button className={styles.prev} onClick={prevPerson}>
               <FiChevronLeft />
             </button>
